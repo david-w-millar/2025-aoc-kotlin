@@ -5,9 +5,16 @@ set unstable := true
 
 import "../just/projects.just"
 
-amper-default:
+[private]
+default:
+  @just --list
+
+# Run the project
+[group("Run")]
+run:
     ./amper run
 
 # update amper
+[group("Misc")]
 update-amper:
     ./amper update -c

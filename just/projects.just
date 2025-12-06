@@ -13,11 +13,11 @@ ktlint:
 
 # Open the project in Intellij IDEA
 [group("Open")]
-open-amper-project:
+open:
   idea .
 
 
 # generate editorconfig text with the intellij default kotlin style
-[group("Generate")]
+[group("Misc")]
 generate-editorconfig:
   @ktlint generateEditorConfig --code-style=intellij_idea
