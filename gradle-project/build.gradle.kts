@@ -1,19 +1,14 @@
 plugins {
-    kotlin("jvm") version "2.2.21"
+  kotlin("jvm") version "2.2.21"
 }
 
 sourceSets {
-    main {
-        kotlin.srcDir("src")
-    }
+  main { kotlin.srcDir("src") }
 }
+
+
+kotlin { jvmToolchain(24) }
 
 tasks {
-    wrapper {
-        gradleVersion = "9.2.1"
-    }
-}
-
-kotlin {
-  jvmToolchain(24)
+  wrapper { gradleVersion = "9.2.1" }
 }

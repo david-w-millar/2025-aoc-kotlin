@@ -1,0 +1,7 @@
+# amper-project/justfile
+
+set fallback
+
+amper-default:
+    echo 'Hello, world!'
+

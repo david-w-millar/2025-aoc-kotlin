@@ -1,0 +1,19 @@
+# gradle-project/justfile
+
+set fallback
+set export
+
+import "../just/lint.just"
+
+[private]
+gradle-default:
+    @just --list
+
+# Clean and assemble the project
+[group("build")]
+clean-assemble:
+  ./gradlew clean assemble
+
+
+
+
