@@ -33,7 +33,7 @@ that are required for certain things to work properly.
 
 ## Getting Started
 
-```
+```shell
 $ just
 
   :::.         ...       .,-:::::      .:::.            .:::. ::::::::
