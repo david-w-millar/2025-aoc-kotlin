@@ -2,8 +2,6 @@
 # Shared recipes for projects
 #
 
-set working-directory := "{{invocation_directory()}}"
-
 ktlint := require("ktlint")
 
 # run ktlint
