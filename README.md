@@ -30,12 +30,10 @@ and [ktlint](https://pinterest.github.io/ktlint/latest/)
 that are required for certain things to work properly.
 
 
+
 ## Getting Started
 
-
-```shell
-$ just
-
+```
   :::.         ...       .,-:::::      .:::.            .:::. ::::::::
   ;;`;;     .;;;;;;;.  ,;;;'````'     ,;'``;.   ,;;,   ,;'``;.`;;``'';
  ,[[ '[[,  ,[[     \[[,[[[            ''  ,[[',['  [n  ''  ,[['[[,_   
@@ -45,26 +43,25 @@ c$$$cc$$$c $$$,     $$$$$$            .c$$P'  $$    $$ .c$$P'  `""*Ycc
 
 
 Available recipes:
-    sites:
-        default-websites # list recipes
+    [Docs]
+    docs-build-tools      # open build tool docs
+    docs-kotlin           # Open AOC related sites
+    docs-libs             # Open libs, plugins, etc related sites
+    docs-misc             # Open Devdocs.io in the default browser
 
-        [Docs]
-        docs-build-tools # open build tool docs
-        docs-kotlin      # Open AOC related sites
-        docs-libs        # Open libs, plugins, etc related sites
-        docs-misc        # Open Devdocs.io in the default browser
+    [Git]
+    github-info           # Github Info
+    github-web            # Github Info
 
-        [Sites]
-        aoc-sites        # Open all the sites!
-
-    [Open]
-    open-amper-project    # Open amper project in Intellij
-    open-gradle-project   # Open gradle project in Intellij
-    open-projects         # Open Projects
+    [Lint]
+    format-justfiles      # Format justfiles
 
     [Project Misc]
     generate-editorconfig # Create an editorconfig file with the default intellij kotlin style
     preflight-checks      # Verify that we're ready to rock KMP should we want to
+
+    [Sites]
+    aoc-sites             # Open all the sites!
 ```
 
 
