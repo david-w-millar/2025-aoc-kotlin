@@ -10,6 +10,9 @@ I simply will not have the time to focus on this for a bit.
 I'm jumping around between amper and gradle builds,
 and am mostly focusing on experimenting with language and build features here.
 
+Also, I'm working in Intellij IDEA, vim, and the command line,
+so I've tried to make each experience ergonomic.
+
 Also of note, this is not the type of code or project that is indicative of
 what I would normally produce outside the context of a programming challenge, or set of puzzles.
 
@@ -65,9 +68,7 @@ Available recipes:
 ```
 
 
-
-
-## TODO
+## TODO?
 
 * [ ] Collapse the justfiles?
 * [ ] Solve a damn puzzle
@@ -90,12 +91,6 @@ Available recipes:
   * [ ] notebooks
   * [ ] automate pulling in example and actual problem input
   * [ ] pre-commit hooks - quality, linting, security, etc
-
-
-
-
-
-
-
-
+  * [ ] pre-commit hooks - commit name conventions?
+  * [ ] automate commit names?
 
