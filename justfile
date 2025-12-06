@@ -4,12 +4,14 @@ set dotenv-load := true
 set export := true
 set unstable := true
 
+figlet := require("figlet")
+
 # --- Aliases ---
 # TODO: to come later...
 
 [private]
 default:
-    @figlet -f cosmic "AoC 2025"
+    @{{figlet}} -f cosmic "AoC 2025"
     @echo "\n"
     @just --quiet --list --list-submodules
 
