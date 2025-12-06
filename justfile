@@ -85,9 +85,9 @@ format-justfiles:
 # Github Info
 [group("Git")]
 github-info:
-  gh repo view "david-w-millar/{{file_stem(source_dir())}}"
+    gh repo view "david-w-millar/{{ file_stem(source_dir()) }}"
 
 # Github Info
 [group("Git")]
 github-web:
-  gh repo view --web "david-w-millar/{{file_stem(source_dir())}}"
+    gh repo view --web "david-w-millar/{{ file_stem(source_dir()) }}"
