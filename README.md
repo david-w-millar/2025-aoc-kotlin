@@ -34,6 +34,8 @@ that are required for certain things to work properly.
 ## Getting Started
 
 ```
+$ just
+
   :::.         ...       .,-:::::      .:::.            .:::. ::::::::
   ;;`;;     .;;;;;;;.  ,;;;'````'     ,;'``;.   ,;;,   ,;'``;.`;;``'';
  ,[[ '[[,  ,[[     \[[,[[[            ''  ,[[',['  [n  ''  ,[['[[,_   
