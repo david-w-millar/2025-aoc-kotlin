@@ -1,7 +1,8 @@
 # gradle-project/justfile
 
-set fallback
-set export
+set fallback := true
+set export := true
+set unstable := true
 
 import "../just/projects.just"
 
@@ -12,8 +13,4 @@ gradle-default:
 # Clean and assemble the project
 [group("build")]
 clean-assemble:
-  ./gradlew clean assemble
-
-
-
-
+    ./gradlew clean assemble

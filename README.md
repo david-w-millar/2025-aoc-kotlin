@@ -83,8 +83,6 @@ Available recipes:
 
 * [ ] Meh
   * [ ] ktlint format - just recipes, git hooks, ¯\_(ツ)_/¯
-  * [ ] justfile format
-
 
 * [ ] Maybe
   * [ ] mordant - for terminal visualization?

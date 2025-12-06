@@ -1,14 +1,13 @@
 # amper-project/justfile
 
-set fallback
+set fallback := true
+set unstable := true
 
 import "../just/projects.just"
 
 amper-default:
-   ./amper run
+    ./amper run
 
 # update amper
 update-amper:
-  ./amper update -c
-
-
+    ./amper update -c

@@ -1,18 +1,7 @@
 #!/usr/bin/env just --justfile
-#
-# A command runner
-# https://just.systems
-#
-# --- Config ---
 
 set dotenv-load := true
-
-# load values from .env files
-
 set export := true
-
-# export variables for consumption by sub-processes
-
 set unstable := true
 
 # --- Aliases ---
@@ -80,7 +69,15 @@ docs-build-tools:
 docs-misc:
     open https://devdocs.io/
 
+# Format justfile
+[group("Lint")]
+[private]
+format-justfile dir=".":
+    just --fmt
+
 # Format justfiles
 [group("Lint")]
 format-justfiles:
-    @just --fmt
+    just --fmt
+    cd amper-project && just --fmt
+    cd gradle-project && just --fmt
