@@ -21,7 +21,3 @@ open-amper-project:
 [group("Generate")]
 generate-editorconfig:
   @ktlint generateEditorConfig --code-style=intellij_idea
-
-#Open Projects
-#[group("Open")]
-#open-projects: open-amper-project open-gradle-project

@@ -11,7 +11,7 @@ figlet := require("figlet")
 
 [private]
 default:
-    @{{figlet}} -f cosmic "AoC 2025"
+    @{{ figlet }} -f cosmic "AoC 2025"
     @echo "\n"
     @just --quiet --list --list-submodules
 
