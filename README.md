@@ -9,9 +9,9 @@ and am mostly focusing on experimenting with language and build features here.
 **Dev Environments:** I'm working in Intellij IDEA, vim, and the command line,
 so I've tried to make each experience ergonomic.
 
-[!NOTE]
-This is not the type of code or project that is indicative of
-what I would normally produce outside the context of a programming challenge, or set of puzzles.
+> [!NOTE]
+> This is not the type of code or project that is indicative of
+> what I would normally produce outside the context of a programming challenge, or set of puzzles.
 
 
 ## Project Notes
