@@ -2,6 +2,13 @@
 
 set fallback
 
+import "../just/projects.just"
+
 amper-default:
-    echo 'Hello, world!'
+   ./amper run
+
+# update amper
+update-amper:
+  ./amper update -c
+
 

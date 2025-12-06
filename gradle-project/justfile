@@ -3,7 +3,7 @@
 set fallback
 set export
 
-import "../just/lint.just"
+import "../just/projects.just"
 
 [private]
 gradle-default:
