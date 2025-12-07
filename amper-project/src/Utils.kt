@@ -16,26 +16,4 @@ object Utils {
     /** The cleaner shorthand for printing output. */
     fun Any?.println() = println(this)
 
-    /**
-     * Regex extension that provides a concise way to match against a CharSequence
-     * and map the result to a data class given a transform block or function.
-     *
-     * **Note:** This is quite fragile, definitely premature, and aside from contracts or WAY more simple constructs is probably bad.
-     *
-     * @see require
-     * @see check
-     *
-     * Example:
-     * ```kotlin
-     * val operation = regex.matchAndMap(input) { (direction, n) ->
-     *   SafeOperation(direction, n)
-     * }
-     * ```
-     */
-    fun <T> Regex.matchAndMap(input: CharSequence, transform: (MatchResult.Destructured) -> T): T? {
-        return find(input)?.destructured?.let(transform)
-    }
-
-
-    inline fun <reified T : Enum<T>> String.toEnum(): T = enumValueOf(this)
 }
