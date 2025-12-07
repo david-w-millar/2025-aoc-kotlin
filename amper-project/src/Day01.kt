@@ -1,16 +1,15 @@
-import Utils.println
 import Utils.readInput
 
 class Day01 {
 
     fun main() {
 
-        // Ew
+        // TODO: Ew
         fun part1(input: List<String>): Int {
             var dial = 50
             var zeroCount = 0
 
-            // Ew
+            // TODO: Ew
             input.forEach {
                 val dir = it.first()
                 val n = requireNotNull(it.drop(1).toIntOrNull())
@@ -25,14 +24,15 @@ class Day01 {
             return zeroCount
         }
 
+        // Part 1 - check test input and get actual result
+        check(part1(readInput("Day01_test")) == 3)
+        println("::: Result: ${part1(readInput("Day01")) }")
+
         fun part2(input: List<String>): Int {
             return input.size
         }
 
 
-        // Part 1 - check test input and get actual result
-        check(part1(readInput("Day01_test")) == 3)
-        println("::: Result: ${part1(readInput("Day01")) }")
 
         //val input = readInput("Day01")
         //part1(input).println()
