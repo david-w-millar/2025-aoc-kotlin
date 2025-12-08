@@ -2,6 +2,7 @@
 
 set fallback := true
 set unstable := true
+set export
 
 import "../just/projects.just"
 
@@ -18,3 +19,38 @@ run:
 [group("Misc")]
 update-amper:
     ./amper update -c
+
+# Scaffold a new day's problem module. eg: just new-day 02
+[group("Project")]
+new-day day:
+    #!/usr/bin/env -S bash
+    set -euo pipefail
+
+    export DAY_NUM={{day}}
+    export DAY_DIR="day{{day}}"
+    export PASCAL_CASE_DAY="Day{{day}}"
+    
+    echo "Creating module for ${PASCAL_CASE_DAY}..."
+
+    # Create directories
+    mkdir -p "${DAY_DIR}/src/main/kotlin"
+
+    # Create module.yaml
+    echo "
+    # ${DAY_DIR}/module.yaml
+    product: jvm/app
+    apply: ../aoc-day
+    settings:
+      main-class: ${PASCAL_CASE_DAY}Kt" > "${DAY_DIR}/module.yaml"
+
+    # Create skeleton Kotlin file
+    echo "fun main() {
+      println(\"Hello, from ${PASCAL_CASE_DAY}!\")
+    }" > "${DAY_DIR}/src/main/kotlin/${PASCAL_CASE_DAY}.kt"
+
+    # Create empty input files
+    touch "${DAY_DIR}/${PASCAL_CASE_DAY}.txt"
+    touch "${DAY_DIR}/${PASCAL_CASE_DAY}_test.txt"
+
+    echo "Module ${DAY_DIR} created successfully."
+    echo "Run it with: ./amper run --module ${DAY_DIR}"

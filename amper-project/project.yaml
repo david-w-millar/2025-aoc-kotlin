@@ -1,0 +1,4 @@
+# project.yaml - project module specification
+modules:
+  - shared
+  - day01

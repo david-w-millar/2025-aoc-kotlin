@@ -1,0 +1,13 @@
+# Shared configuration for AoC puzzle modules
+
+dependencies:
+  - ./shared
+
+settings:
+  kotlin:
+    powerAssert:
+      enabled: true
+      functions:
+        - kotlin.assert
+        - kotlin.require
+        - kotlin.check

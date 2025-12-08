@@ -1,0 +1,9 @@
+# shared/module.yaml
+product:
+  type: lib
+  platforms: [jvm]
+
+
+
+
+
