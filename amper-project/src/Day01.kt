@@ -8,21 +8,18 @@ class Day01 {
         val testInput: List<String> by lazy { readInput("Day01_test") }
         val input: List<String> by lazy { readInput("Day01") }
 
-
-        fun maxVal(input: List<String>) = input.map { it.drop(1).toInt() }.max()
-        fun minVal(input: List<String>) = input.map { it.drop(1).toInt() }.min()
-
         fun String.direction() = first()
         fun String.rotateN() = drop(1).toInt()
 
-        class CountingDial(val startingValue: Int = 50) {
+        class CountingDial(startingValue: Int = 50) {
             var currentValue = startingValue
+                set(newVal) { field = newVal.mod(100) }
+
             var zeroCount = 0
 
             fun turn(operation: String) {
-                val dir = operation.direction()
                 val n = operation.rotateN()
-                when(dir) {
+                when(operation.direction()) {
                     'R' ->  rightN(n)
                     'L' ->  leftN(n)
                 }
@@ -31,13 +28,11 @@ class Day01 {
             fun rightN(n: Int) { repeat(n) { right()} }
             fun leftN(n: Int) { repeat(n) { left() } }
 
-
             fun right() = applyTick(1)
             fun left() = applyTick(-1)
 
             fun applyTick(n: Int) {
                 currentValue += n
-                currentValue.mod(100)
                 incIfZero()
             }
 
@@ -46,19 +41,17 @@ class Day01 {
 
 
         fun part2(input: List<String>): Int {
-            var dial = 50
-            var zeroCount = 0
-
-            val maxVal = maxVal(input)
-            val minVal = minVal(input)
-
-            println("::: MIN: $minVal, MAX: $maxVal")
-
-            return input.size
+            val dial = CountingDial(50)
+            input.forEach {
+                dial.turn(it)
+            }
+            return dial.zeroCount
         }
 
+        "::: Part 2 Example Solution".println()
         part2(testInput).println()
         check(part2(testInput) == 6)
+        "::: Part 2 Solution".println()
         part2(input).println()
 
 
@@ -83,12 +76,10 @@ class Day01 {
             return zeroCount
         }
 
-
         // Part 1 - check test input and get actual result
         check(part1(testInput) == 3)
-        println("::: Result: ${part1(readInput("Day01")) }")
+        println("::: Part 1 Solution: ${part1(readInput("Day01")) }")
         part1(input).println()
-
     }
 
 }
