@@ -71,4 +71,5 @@ Temporary Items
 .kotlin/
 build
 problem_inputs/**/*.txt
+**/Day*.txt
 local.properties
