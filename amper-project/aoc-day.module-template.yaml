@@ -4,7 +4,7 @@
 
 dependencies:
   - $libs.kotlinx.coroutines.core
-  - ../utils
+  - ./utils
 
 settings:
   kotlin:

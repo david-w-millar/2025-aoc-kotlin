@@ -1,4 +1,4 @@
-# day01/module.yaml
+
 product: jvm/app
 apply:
-  - "../templates/aoc-day.module-template.yaml"
+  - "../aoc-day.module-template.yaml"

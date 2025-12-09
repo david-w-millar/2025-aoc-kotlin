@@ -1,4 +1,5 @@
 import Utils.println
+import Utils.readInputResource
 
 fun part1(input: List<String>): Int {
     var dial = 50
@@ -48,10 +49,8 @@ fun part2(input: List<String>): Int {
 }
 
 fun main() {
-//    val testInput by lazy { Utils.readInput("Day01_test") }
-//    val input by lazy { Utils.readInput("Day01") }
-    val testInput by lazy { Utils.readResourceInput("Day01_test") }
-    val input by lazy { Utils.readResourceInput("Day01") }
+    val testInput by lazy { readInputResource("Day01_test") }
+    val input by lazy { readInputResource("Day01") }
 
     // test if implementation meets criteria from the description, like:
     check(part1(testInput) == 3)

@@ -1,1 +1,4 @@
-Keep me
+Hack to keep this folder as part of the git repo.
+
+Dump your problem inputs here if you'd like.
+Checkout the `utils/src/Utils.k' for examples of reading them from here.

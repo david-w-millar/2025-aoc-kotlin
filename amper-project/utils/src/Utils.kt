@@ -20,11 +20,11 @@ object Utils {
      * Usage: readResourceLines("/Day01_test"")
      */
     fun readResourceText(path: String): String {
-        val resourceUrl = this::class.java.getResource(path)
+        val resourceUrl = object {}.javaClass.getResource(path)
         requireNotNull(resourceUrl) { "Resource not found at: $path" }
         return resourceUrl.readText()
     }
 
     /** Reads lines from an input file from a module's resources */
-    fun readResourceInput(name: String) = readResourceText("/$name.txt").trim().lines()
+    fun readInputResource(name: String) = readResourceText("/$name.txt").trim().lines()
 }
