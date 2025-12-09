@@ -1,5 +1,6 @@
 # project.yaml - project module specification
 modules:
   - utilities/utils
+  - utilities/scaffold
   - problems/day00
   - problems/day01

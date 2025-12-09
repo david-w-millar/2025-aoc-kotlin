@@ -1,0 +1,27 @@
+product: jvm/app
+  # mainClass: scaffold.MainKt
+
+dependencies:
+  # Clikt: Bad ass KMP CLI library
+  - $libs.clikt.core
+  - $libs.clikt.markdown
+
+  # OpenRewrite: sane YAML modification
+  - $libs.rewrite.core
+  - $libs.rewrite.yaml
+
+  # Logging requirement for OpenRewrite
+  - $libs.slf4j.simple
+
+#
+# TODO: See if newer versions play well together
+#
+#  - com.github.ajalt.clikt:clikt:5.0.1
+#  - com.github.ajalt.clikt:clikt-markdown:5.0.1
+#  - com.github.ajalt.clikt:clikt:5.0.3
+#  - com.github.ajalt.clikt:clikt-markdown:5.0.3
+#
+#  - org.openrewrite:rewrite-core:8.68.1
+#  - org.openrewrite:rewrite-yaml:8.68.1
+#
+#  - org.slf4j:slf4j-simple:2.0.17

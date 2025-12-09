@@ -1,0 +1,21 @@
+[versions]
+clikt = "5.0.0"
+rewrite = "8.13.4"
+slf4j = "2.0.9"
+kotlinx-coroutines = "1.9.0"
+
+[libraries]
+# Clikt: A bad ass kmp cli framework
+clikt-core = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
+clikt-markdown = { module = "com.github.ajalt.clikt:clikt-markdown", version.ref = "clikt" }
+
+# OpenRewrite: Automated refactoring beast.
+# Using it here for sane yaml manipulation.
+# Some might disagree with sane for this use case.
+rewrite-core = { module = "org.openrewrite:rewrite-core", version.ref = "rewrite" }
+rewrite-yaml = { module = "org.openrewrite:rewrite-yaml", version.ref = "rewrite" }
+
+# SLF4J: A simple logging facade for Java
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j" }
+
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
