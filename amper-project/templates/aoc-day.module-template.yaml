@@ -1,0 +1,27 @@
+#
+# Shared configuration for AoC puzzle modules
+#
+
+dependencies:
+  - $libs.kotlinx.coroutines.core
+  - ../utils
+
+settings:
+  kotlin:
+    powerAssert:
+      enabled: true
+      functions:
+        - kotlin.assert
+        - kotlin.require
+        - kotlin.check
+
+# Other Possible Candidates
+#        - kotlin.test.assertTrue
+#        - kotlin.test.assertFalse
+#        - kotlin.test.assertEquals
+#        - kotlin.test.assertNotEqual
+#        - kotlin.test.assertNull
+#        - kotlin.test.assertNotNull
+#        - kotlin.test.assertIs
+#        - kotlin.test.assertIsNot
+#        - kotlin.test.assertSame

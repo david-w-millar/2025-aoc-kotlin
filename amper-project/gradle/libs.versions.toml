@@ -1,3 +1,9 @@
+#
+# gradle/libs.versions.toml
+#
+# Version catalog
+#
+
 [versions]
 kotlinx-coroutines = "1.9.0"
 
