@@ -1,4 +1,4 @@
 # project.yaml - project module specification
 modules:
   - utils
-  - day01
+  - days/day01

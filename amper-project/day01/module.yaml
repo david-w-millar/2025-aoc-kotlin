@@ -1,4 +1,0 @@
-
-product: jvm/app
-apply:
-  - "../aoc-day.module-template.yaml"

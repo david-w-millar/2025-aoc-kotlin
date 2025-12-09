@@ -1,3 +1,5 @@
+@file:Suppress("ktlint:standard:filename")
+
 import Utils.println
 import Utils.readInputResource
 
